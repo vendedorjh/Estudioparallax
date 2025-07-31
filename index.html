@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estúdio Fotográfico | Parallax</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adicionando ícone do WhatsApp e Remix Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Lentes & Luz</h1>
+        <nav>
+            <a href="#portfolio" class="inicial">Portfólio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    
+    <section id="home" class="parallax-container">
+        <!-- Camadas do parallax em ordem de profundidade -->
+        <img src="/desfio_vzero29_8/img/cenario.jpg" class="parallax-layer layer-back">
+        <img src="/img/equipamentoscam.png" class="parallax-layer layer-equip">
+        <img src="/img/fotografo-silhueta.png" class="parallax-layer layer-photografo">
+        <h1 class="parallax-layer layer-text">Capturando Momentos</h1>
+        <img src="/img/lente-principal.png" class="parallax-layer layer-lens">
+        <img src="/img/flash.png" class="parallax-layer layer-flash">
+        
+        <section class="audio">
+            <div class="audio-player">
+                <audio src="/camera-shutter-and-flash-combined-6827.mp3" controls autoplay ></audio>
+            </div>
+        </section>
+    </section>
+    
+    <section id="portfolio" class="content">
+        <h2>Nosso Portfólio</h2>
+        <div class="galeria">
+            <p>Parallax é um efeito visual que cria a ilusão de profundidade em uma cena, onde os objetos mais distantes se movem mais lentamente do que os objetos mais próximos.</p>
+            <p>Esse efeito é comumente utilizado em sites para criar uma experiência mais imersiva.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni dolorum inventore ipsa repellat temporibus repellendus, voluptates est ullam, quibusdam excepturi modi fugiat nam ipsum rem ipsam qui quos suscipit? Repellat.</p>
+            
+            <p>Ao rolar a página, diferentes camadas de imagens se movem a velocidades diferentes, criando a sensação de profundidade.</p>
+            <p>O parallax pode ser aplicado a imagens de fundo, seções de conteúdo e até mesmo elementos de interface do usuário.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <p>Esse efeito é comumente utilizado em sites e aplicativos para criar uma experiência mais imersiva.</p>
+        </div>
+    </section>
+    
+    <section id="sobre" class="content">
+        <h2>Sobre Nós</h2>
+        <div class="galeria">
+            <p>Somos um estúdio fotográfico apaixonado por capturar momentos especiais.</p>
+            <p>Nossa equipe é composta por profissionais experientes e criativos.</p>
+            <!-- Adicione mais conteúdo sobre aqui -->
+        </div>
+    </section>
+    
+    <section id="servicos" class="content">
+        <h2>Nossos Serviços</h2>
+        <div class="galeria">
+            <p>Oferecemos diversos serviços fotográficos para atender suas necessidades.</p>
+            <ul>
+                <li>Fotografia de Casamento</li>
+                <li>Ensaios Fotográficos</li>
+                <li>Fotografia Comercial</li>
+                <li>Edição de Imagens</li>
+            </ul>
+            <!-- Adicione mais serviços aqui -->
+        </div>
+    </section>
+    
+    <section id="contato" class="content">
+        <h2>Entre em Contato</h2>
+        <div class="galeria">
+            <p>Estamos ansiosos para ouvir de você! Preencha o formulário abaixo e enviaremos direto para nosso WhatsApp.</p>
+            
+            <form id="formWhatsApp" class="form-contato">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                
+                <div>
+                    <label for="servico">Serviço de interesse:</label>
+                    <select id="servico" name="servico">
+                        <option value="">Selecione um serviço</option>
+                        <option value="Casamento">Fotografia de Casamento</option>
+                        <option value="Ensaios">Ensaios Fotográficos</option>
+                        <option value="Comercial">Fotografia Comercial</option>
+                        <option value="Edicao">Edição de Imagens</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Enviar via WhatsApp
+                </button>
+            </form>
+            
+            <div id="confirmation" class="hidden">
+                <h3>Obrigado pelo seu contato!</h3>
+                <p>Seu formulário foi enviado com sucesso. Em breve entraremos em contato pelo WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Lentes & Luz. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://github.com/seu-perfil" target="_blank">Vendedorjh</a></p>
+    </footer>
+    
+    <!-- Botão ScrollUp -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    
+    <script src="script.js"></script>
+</body>
+</html>
