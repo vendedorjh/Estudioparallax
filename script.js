@@ -26,6 +26,9 @@ document.addEventListener("scroll", () => {
 
   // Animação do fundo (movimento vertical para criar profundidade)
   fundo.style.marginBottom = -value * 0.2 + "px" // Fundo se move bem devagar
+  fundo.style.filter = `blur(${value * 0.01}px)` // Adiciona um leve desfoque
+  fundo.style.transform = `scale(${1 + value * 0.0005})` // Leve zoom para dar profundidade
+  lente.style.transform = `rotate(${value * 0.05}deg)` // Rotação da lente
 })
 
 // Funcionalidade do header (muda cor ao fazer scroll)

@@ -134,8 +134,8 @@ nav a:hover::after {
 .layer-flash {
   width: 12%;
   max-width: 150px;
-  top: 75%;
-  left: 4%;
+  top: 73%;
+  left: 7%;
   right: 0;
   transform: translateX(20%);
   z-index: 5;
@@ -156,19 +156,19 @@ nav a:hover::after {
 .audio {
   position: absolute;
   top: 20%;
-  right: 10%;
+  right: 6%;
   z-index: 1;
+  
 }
 
-.audio-player {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 1rem;
+.audio audio {
+  width: 200px;
+  height: 40px;
   border-radius: 25px;
-  color: white;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  animation: pulse 3s infinite;
-}
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
 
 @keyframes pulse {
   0%,
@@ -487,12 +487,13 @@ footer a:hover {
   .layer-flash {
     width: 20%;
     top: 80%;
-    left: 8%;
+    left: 20%;
     transform: translateX(10%);
   }
-
+  
   .layer-equip {
     width: 50%;
+    left: 15%;
     transform: translateX(-30%);
   }
 
